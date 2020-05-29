@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/portfoliodb",
+  process.env.MONGODB_URI || "mongodb://localhost/reactrecipes",
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
 
