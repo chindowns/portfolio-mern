@@ -1,47 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Footer from "./components/Footer"
+import ROW from "react-bootstrap/Row";
+import COL from "react-bootstrap/Col";
+import CONTAINER from "react-bootstrap/Container";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import AboutMe from "./pages/aboutMe";
+import Blogs from "./pages/blogs";
 
 function App() {
   return (
     <div>
       <div id="nav" className="d-flex flex-wrap">
-        <header className="flex-nowrap">
-          <h1> Michael Downs</h1>
-          <p>Full Stack Developer</p>
-        </header>
+        <Header />
 
-        <div id="spacer" className="d-flex flex-grow-1"></div>
-
-        <nav className="col-5 d-flex flex-nowrap">
-          <ul className="nav nav-pills flex-nowrap">
-            <li className="nav-link d-flex flex-nowrap">
-              <a id="nav-projects" href="#">Latest</a></li>
-            <li className="nav-link d-flex flex-nowrap">
-              <a id="nav-about" href="#">About</a></li>
-            <li className="nav-link d-flex flex-nowrap">
-              <a id="nav-blog" href="#">Blog</a></li>
-            <li className="nav-item d-flex flex-nowrap">
-              <a className="nav-link" target="blank" href="https://www.linkedin.com/in/michaeldownssj"><img
-                src="assets/images/li-in-bug.png" alt="" width="25px" height="25px" /></a>
-            </li>
-
-          </ul>
-        </nav>
+        <NavBar />
       </div>
 
       <main id="container" className="content">
-        <div id="about">
-          <img id="profile-img" src="assets/images/Portfolio-HeadShot-3.jpg" width="300px" />
-          <p>
-            Michael is currently enrolled as a full time student at UC Berkeley Extension's Full Stack Development program. Michael delivers clean and polished applications in a collaborative environment. He is an effective communicator with an ability to translate technology into everyday language for clients and users.
+        <CONTAINER>
+          <ROW>
+          <AboutMe />
 
-            <br /><br />
-            Michael is a collaborative teammate who will also manage individual tasks in order to get projects completed. Through his clear communication and leadership skills, he delivered successful projects that involved pair programming and virtual teams.
-            <br /><br />
-          </p>
-        </div>
+          </ROW>
+          <ROW>
+            <Blogs />
+          </ROW>
+        </CONTAINER>
 
         <section id="projects">
 

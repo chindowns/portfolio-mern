@@ -1,31 +1,83 @@
-.App {
-  text-align: center;
+html body {
+  margin: 0 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#nav {
+  padding-bottom: 50px;
+}
+
+header {
+  color: darkgray;
+  height: 60px;
+  line-height: 1.5;
+  padding: 5px 25px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: lighter;
+}
+
+nav {
+  font-weight: normal;
+  margin-top: auto;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  float: right;
+  padding: 6px;
+}
+
+#projects {
+  margin: 50px 25px 25px 25px;
+  /* font-family: 'Convergence', sans-serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  /* font-family: 'KoHo', sans-serif; */
+  /* font-family: 'Zilla Slab', serif; */
+
+  font-weight: light;
+  font-style: italic;
+  display:none;
+}
+
+.project {
+  border-top: 1px solid lightgrey;
+  padding: 5px;
+}
+
+#profile-img {
+  float: left;
+  padding: 0px 20px 200px 5px;
+}
+
+#blog {
+  display:none;
+  padding: 0 25px;
+}
+
+/* .card-img-top {
+  width: 300px;
+} */
+
+.project-description {
+  padding: 10px 25px 10px 25px;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 25px;
+  background: snow;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
