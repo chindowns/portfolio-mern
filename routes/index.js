@@ -1,18 +1,15 @@
 const path = require("path");
-const router = require("express").Router();
 const axios = require("axios");
+const db = require("../models");
 
-
+module.exports = function (app) {
     // Send every request to the React app
     // Define any API routes before this runs
-    router.get("*", function (req, res) {
-        res.sendFile(path.join(__dirname, "./client/build/index.html"));
-    });
 
     // GET BLOGS
     const URL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40chindowns"
 
-    router.get("/api/blogs", (req, res) => {
+    app.get("/api/blogs", (req, res) => {
     console.log(URL);
         axios.get(URL, function(response) {
             console.log(response);
@@ -51,4 +48,4 @@ const axios = require("axios");
     // })
 
 
-module.exports = router;
+}
