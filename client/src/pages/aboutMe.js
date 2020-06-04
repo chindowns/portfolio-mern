@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-import {Row, Col} from "react-bootstrap";
-import API from "../utils/api";
+import React from "react";
+import {Col} from "react-bootstrap";
 
 export default function AboutMe() {
     return(
       <div id="about">
         <Col>
-            <img id="profile-img" src="Portfolio-HeadShot-3.jpg" className="rounded-circle" width="300px" />
+            <img id="profile-img" src="Portfolio-HeadShot-3.jpg" className="rounded-circle" alt="Michael Downs" width="300px" />
 
         <p>
         Michael completed UC Berkeley's Full Stack Development program. Michael delivers clean and polished applications in a collaborative environment. He is an effective communicator with an ability to translate technology into everyday language for clients and users.

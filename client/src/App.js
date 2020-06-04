@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import ROW from "react-bootstrap/Row";
-import COL from "react-bootstrap/Col";
 import CONTAINER from "react-bootstrap/Container";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
@@ -34,7 +33,7 @@ function App() {
           <div id="project-weather" className="row d-flex flex-wrap justify-content-around project">
             <div className="col-4 card">
               <div className="card-body">
-                <img className="card-img-top" src="assets/images/Dining-Wishlist.gif" width="300px" />
+                <img className="card-img-top" alt="Dining-Wish" src="assets/images/Dining-Wishlist.gif" width="300px" />
                 <a href="https://afternoon-ridge-53194.herokuapp.com/" className="card-link">Restaurant Listed</a>
                 <a href="https://github.com/chindowns/restaurant-wishlist" className="card-link">Github Repository</a>
               </div>
@@ -61,7 +60,7 @@ function App() {
 
             <div className="col-4 card">
               <div className="card-body">
-                <img className="card-img-top" src="assets/images/covid-19-tracker.png" width="300px" />
+                <img className="card-img-top" src="assets/images/covid-19-tracker.png" alt="Covid-19" width="300px" />
                 <a href="https://chindowns.github.io/covid19-tracker/" className="card-link">Covid-19 Pandemic Tracker</a>
                 <a href="https://github.com/chindowns/covid19-tracker" className="card-link">Github Repository</a>
               </div>
@@ -71,7 +70,7 @@ function App() {
           <div id="project-weather" className="row d-flex flex-wrap justify-content-around project">
             <div className="col-4 card">
               <div className="card-body">
-                <img className="card-img-top" src="assets/images/weather-app.jpg" width="300px" />
+                <img className="card-img-top" src="assets/images/weather-app.jpg" alt="Weather App" width="300px" />
                 <a href="https://chindowns.github.io/weather/" className="card-link">Weather App</a>
                 <a href="https://github.com/chindowns/weather" className="card-link">Github Repository</a>
               </div>
