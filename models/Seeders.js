@@ -9,47 +9,70 @@ db.Resume.insert({
     phone: "479-799-9490",
     city: "San Jose",
     state: "CA",
-    linkedinResume: "michaeldownssj",
-    githubResume: "chindowns"
+    linkedin: "michaeldownssj",
+    github: "chindowns"
 });
 
-db.Skills.insert({skill:"HTLM5", type:"frontend"});
-db.Skills.insert({ skill: "CSS", type: "frontend" });
-db.Skills.insert({ skill: "CSS Frameworks", type: "frontend" });
-db.Skills.insert({ skill: "Bootstrap CSS Framework", type: "frontend" });
-db.Skills.insert({ skill: "JavaScript", type: "frontend" });
-db.Skills.insert({ sill: "jQuery", type: "frontend"});
-db.Skills.insert({ skill: "jQuery", type: "backend"});
-db.Skills.insert({ skill: "JavaScript", type: "backend" });
-db.Skills.insert({ skill: "Web APIs", type: "frontend" });
-db.Skills.insert({ skill: "3rd Party APIs", type: "frontend" });
-db.Skills.insert({ skill: "Server Side APIs", type: "frontend" });
-db.Skills.insert({ skill: "Firebase", type: "frontend" });
-db.Skills.insert({ skill: "React", type: "frontend" });
-db.Skills.insert({ skill: "MVC", type: "backend" });
-db.Skills.insert({ skill: "ORM", type: "frontend" });
-db.Skills.insert({ skill: "MySql", type: "backend" });
-db.Skills.insert({ skill: "Sequelize ORM", })
-db.Skills.insert({ skill: "Handlebars ORM", type: "frontend" });
-db.Skills.insert({ skill: "OOP", type: "backend" });
-db.Skills.insert({ skill: "ODM", type: "frontend" });
-db.Skills.insert({ skill: "Node", type: "backend" });
-db.Skills.insert({ skill: "HTLM5", type: "frontend" });
-db.Skills.insert({ skill: "NoSQL", type: "backend" });
-db.Skills.insert({ skill: "NoSQL", type: "frontend" });
-db.Skills.insert({ skill: "Linux", type: "backend" });
-db.Skills.insert({ skill: "Photoshop", type: "frontend" });
-db.Skills.insert({ skill: "Big Data", type: "backend"});
-db.Skills.insert({ skill: "Restful API", type: "backend"});
-db.Skills.insert({ skill: "Stateful Development", type: "backend"});
+db.Skills.insert({"3rd Party APIs": "Frontend"}),
+db.Skills.insert({"AJAX": "Frontend"}),
+db.Skills.insert({"API": "Backend"}),
+db.Skills.insert({"Big Data": "Backend"}),
+db.Skills.insert({"Bootstrap": "Frontend"}),
+db.Skills.insert({"Bootstrap CSS Framework": "Frontend"}),
+db.Skills.insert({"Cascading Style Sheets (CSS)": "Frontend"}), 
+db.Skills.insert({"Context API": "Frontend"}),
+db.Skills.insert({"CSS Frameworks": "Frontend"}), 
+db.Skills.insert({"Databases": "Frontend"}),  
+db.Skills.insert({"Declarative Programming": "Frontend"}),  
+db.Skills.insert({"Django": "Frontend"}),  
+db.Skills.insert({"ES6": "Frontend"}),  
+db.Skills.insert({"Express.js": "Backend"}),  
+db.Skills.insert({"Firebase": "Backend"}), 
+db.Skills.insert({"Flask": "Frontend"}),
+db.Skills.insert({"Full Stack": "Frontend"}),
+db.Skills.insert({"Git": "Backend"}),  
+db.Skills.insert({"GitHub": "Backend"}),  
+db.Skills.insert({"Handlebars ORM": "Frontend"}), 
+db.Skills.insert({"Heroku": "Backend"}),  
+db.Skills.insert({"HTML5 ": "Frontend"}), 
+db.Skills.insert({"IndexDB": "Frontend"}),  
+db.Skills.insert({"JavaScript": "Frontend"}), 
+db.Skills.insert({"jQuery": "Frontend"}), 
+db.Skills.insert({"JSON": "Frontend"}),  
+db.Skills.insert({"JSX ": "Frontend"}), 
+db.Skills.insert({"Linux": "Backend"}), 
+db.Skills.insert({"Mongo DB": "Backend"}),  
+db.Skills.insert({"Mongoose ODM": "Frontend"}),  
+db.Skills.insert({"MVC": "Frontend"}), 
+db.Skills.insert({"MySQL": "Backend"}),  
+db.Skills.insert({"Node.js": "Backend"}),  
+db.Skills.insert({"NoSQL": "Backend"}), 
+db.Skills.insert({"Object-oriented Programming (OOP)": "Frontend"}),  
+db.Skills.insert({"ODM": "Frontend"}), 
+db.Skills.insert({"ORM": "Frontend"}), 
+db.Skills.insert({"Passport": "Frontend"}),  
+db.Skills.insert({"Postman": "Frontend"}),  
+db.Skills.insert({"Problem-Solving": "Backend"}),
+db.Skills.insert({"Python": "Frontend"}),  
+db.Skills.insert({"Rails": "Frontend"}),  
+db.Skills.insert({"React": "Frontend"}), 
+db.Skills.insert({"Rest API": "Frontend"}),  
+db.Skills.insert({"Ruby": "Frontend"}),  
+db.Skills.insert({"Sequelize ORM ": "Frontend"}),
+db.Skills.insert({"Server Side APIs": "Backend"}), 
+db.Skills.insert({"Sinatra": "Frontend"}), 
+db.Skills.insert({"SQL": "Backend"}),
+db.Skills.insert({"Stateful Development": "Frontend"}), 
+db.Skills.insert({"Testing (edited)": "Frontend"}), 
+db.Skills.insert({"Web APIs": "Frontend"}),
 
 db.Projects.insert({
-    projectName: "Weather App",
+    project:"Weather App",
     repoLink: "https://chindowns.github.io/weather/",
-    imageLink: "public/assets/images/weather-app.jpg",
+    imageLink: "weather-app.jpg",
     deployLink: "https://github.com/chindowns/weather",
     projectRole: "Auther (Self Developed)",
-    skills_id: ["Web APIs", "3rd Party APIs", "JavaScript", "CSS Frameworks", "Photoshop"],
+    skills_id: ["Web APIs", "3rd Party APIs", "JavaScript", "CSS Frameworks"],
     appDesc: "Easy and Quick Weather App utilizing weatherAPI for weather data",
     projHighlights: "Weather App is clean, polished, responsive, friendly site where user can Click, Enter or Tab to engage a search. The site maintains the last 10 visited sites.",
     projResponsibilities: "Full Design, API selection, and Developemnt.",
@@ -57,12 +80,12 @@ db.Projects.insert({
 })
 
 db.Projects.insert({
-    projectName: "Codvid-19 Pandemic Tracker",
-    imageLink: "public/assets/images/covid-19-tracker.png",
+    project:"Codvid-19 Pandemic Tracker",
+    imageLink: "covid-19-tracker.png",
     repoLink: "https://github.com/chindowns/covid19-tracker",
     deployLink: "https://chindowns.github.io/covid19-tracker/",
     projectRole: "Covid API, Chartjs, and Refactoring",
-    skills_id: ["JavaScript", "jQuery", "Web APIs", "3rd Party APIs", "HTML5", "CSS", "CSS Frameworks", "Mapbox", "Leafletjs", "Big Data", "Big Data Parsing"],
+    skills_id: ["JavaScript", "jQuery", "Web APIs", "3rd Party APIs", "HTML5", "CSS", "CSS Frameworks", "Mapbox", "Leafletjs", "Big Data", "Big Data Parsing", "Full Stack"],
     appDesc: "Web App developed in the early stages to track new cases by State/Day",
     projHighlights: "Clean, User friendly sight to pull the latest available data regarding the Pandemic in one place.  The News pulls Health Information by country which was COVID related during the Pandemic.",
     projResponsibilities: "Identify, Design, Develop, and Deploy in 7 days. Direct responsibility for COVID API and Data Rendering",
@@ -70,8 +93,8 @@ db.Projects.insert({
 });
 
 db.Projects.insert({
-    projectName: "Restaurant List",
-    imageLink:"public/assets/images/Dining-Wishlist.gif",
+    project:"Restaurant List",
+    imageLink:"Dining-Wishlist.gif",
     repoLink: "https://github.com/chindowns/restaurant-wishlist",
     deployLink: "https://afternoon-ridge-53194.herokuapp.com/",
     projectRole: "Design and FullStack Development",
@@ -83,16 +106,25 @@ db.Projects.insert({
 });
 
 db.Projects.insert({
-    projectName: "JobKit",
-    imageLink: "public/assets/images/applications-tracked.jpg",
+    project:"JobKit",
+    imageLink: "applications-tracked.jpg",
     repoLink: "https://github.com/chindowns/job-kit",
     deployLink: "https://jobkit.herokuapp.com",
     projectRole: "Database design and model creation with Sequelize, Authentication and Bug testing and troubhleshooting.",
-    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Sequelize ORM", "Handlebars", "UI Kit", "Firebase Authentication", "3rd Party APIs", "Server Side APIs", "OOP", "Node", "Restful API"]
+    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Sequelize ORM", "Handlebars", "UI Kit", "3rd Party APIs", "Server Side APIs", "OOP", "Node.js", "Rest API"]
 });
 
+db.Project.insert({
+    project:"Yum&Yum",
+    imageLink: "yumyum.jpg",
+    repoLink: "https://github.com/chindowns/Yum-Yum",
+    deployLink: "https://yum-y-yum.herokuapp.com",
+    projectRole: "Database design, models, authentication, application setup, react recipe search, recipe favorites, troubhleshooting and testing",
+    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Node.js", "Sequelize ORM", "Bootstrap", "Firebase", "Rest API", "OOP", "Server Side APIs"]
+})
+
 db.JobHistory.insert({
-    companyName: "Self-Employeed",
+    company: "Self-Employeed",
     jobTitle: "Realestate, Landlord, Handyman",
     endDate: "2020-03-10",
     startDate: "2016-04-01",
@@ -102,7 +134,7 @@ db.JobHistory.insert({
 });
 
 db.JobHistory.insert({
-    companyName: "1Source LLC",
+    company: "1Source LLC",
     jobTitle: "Business Consultant",
     endDate: "2016-04-01",
     startDate: "2012-08-01",
@@ -112,7 +144,7 @@ db.JobHistory.insert({
 });
 
 db.JobHistory.insert({
-    companyName: "CD Business Solutions",
+    company: "CD Business Solutions",
     jobTitle: "Business Consultant",
     endDate: "2012-08-01",
     startDate: "2009-08-01",
@@ -123,7 +155,7 @@ db.JobHistory.insert({
 });
 
 db.JobHistory.insert({
-    companyName: "PRN",
+    company: "PRN",
     jobTitle: "Director Business Development",
     endDate: "2009-06-01",
     startDate: "1998-05-01",
