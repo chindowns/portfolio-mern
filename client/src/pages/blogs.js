@@ -8,7 +8,7 @@ export default function Blogs() {
 
     // const mediumURL = `https://api.ress2json.com/v1/api.json?rss_url=https://medium.com/feed/@chindowns`
     let blogs = [];
-    let title = "";
+    let title ;
 useEffect(() => {
     getBlogs();
 })
@@ -17,7 +17,7 @@ useEffect(() => {
         axios.get('/api/blogs')
         .then(res => { 
         // console.log(res);
-            title = res.data.feed.title
+            title = res.data.feed.title;
             blogs = res.data.items;
         console.log(blogs);
         });
@@ -30,7 +30,7 @@ useEffect(() => {
             <CardContainer><CardRow>
                 {blogs.map((blog, i) => (
 
-                    <Card blog={blog} key={i} />
+                    <Card blog={blog} key={blog.guid} />
 
                 ))}
             </CardRow></CardContainer>

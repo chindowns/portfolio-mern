@@ -1,22 +1,22 @@
 import React from "react";
+import Card from 'react-bootstrap/Card'
 import "./card.css";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
-const Card = (props) => {
+const Item = (props) => {
+
+    let blog = props.blog;
 
     return (
-        <div className="col-md-4 col-sm-12 recipe-div">
-            <div className="card">
-                <Link to={"/recipes/" + recipe.id}>
-                    <div className="card-body" style={style}> 
-                    Card            </div>
-                    <div className="card-title"><h5 className="card-title" >{recipe.name}</h5></div>
-                </Link>
-
-            </div>
-        </div>
+        <Card>
+            <Card.Img variant="top" src="blog.thumbnail" />
+            <Card.Body>
+                <Card.Title>blog.title</Card.Title>
+                <Card.Text>blog.descrption</Card.Text>
+            </Card.Body>
+        </Card>
     );
 
 }
 
-export default Card;
+export default Item;
