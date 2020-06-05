@@ -1,25 +1,21 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const path = require("path");
-const PORT = process.env.PORT || 3001;
-const routes = require("./routes/index")
+const PORT = process.env.PORT || 3100;
 
-// Define middleware here
+// middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Serve up static assets (usually on heroku)
+// due to the where the public folder ends up after compiling,
+// this is where your public static files end up
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+    app.use(express.static("client/build"));
 }
 
-// Use routes
-app.use("/api", routes);
-
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// routes
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes.js")(app);
 
 // Connect to the Mongo DB
 mongoose.connect(

@@ -1,20 +1,24 @@
 import React, {useEffect} from "react";
-import API from "../utils/API"
+import axios from "axios";
+import CardContainer from "../components/Cards/";
+import CardRow from "../components/Cards/";
+import Card from "../components/Cards/";
 
 export default function Blogs() {
 
     // const mediumURL = `https://api.ress2json.com/v1/api.json?rss_url=https://medium.com/feed/@chindowns`
-    let blogs = {}
-        
+    let blogs = [];
+    let title = "";
 useEffect(() => {
     getBlogs();
 })
 
     function getBlogs() {
-        API.getBlogs()
+        axios.get('/api/blogs')
         .then(res => { 
-            blogs = res.data;
-        console.log(res.data);
+        // console.log(res);
+            title = res.data.feed.title
+            blogs = res.data.items;
         console.log(blogs);
         });
     }
@@ -22,11 +26,16 @@ useEffect(() => {
     return (
 
         <div>
-            <h2>res.data.feed.title</h2>
-        {/* <p>{blogs}</p> */}
+            <h2>title</h2>
+            <CardContainer><CardRow>
+                {blogs.map((blog, i) => (
+
+                    <Card blog={blog} key={i} />
+
+                ))}
+            </CardRow></CardContainer>
 
         </div>
     )
-
 
 }
