@@ -9,7 +9,6 @@ import Header from "./components/Header";
 import AboutMe from "./pages/aboutMe";
 import Blogs from "./pages/blogs";
 import Projects from "./pages/projects";
-import { ModalProvider } from './components/Modals/modalContext';
 
 
 function App() {
@@ -21,14 +20,10 @@ function App() {
         <NavBar />
         </ROW>
         <Switch>
-
           <Route exact path="/" component={AboutMe} />
           <Route path="/aboutme" component={AboutMe} />
-          <ModalProvider>
-            <Route path="/blogs" component={Blogs} />
-          </ModalProvider>
+          <Route path="/blogs" component={Blogs} />
           <Route path="/projects" component={Projects} />
-
         </Switch>
         <Footer />
       </CONTAINER>
