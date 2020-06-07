@@ -97,7 +97,7 @@ db.Projects.insert({
     imageLink:"Dining-Wishlist.gif",
     repoLink: "https://github.com/chindowns/restaurant-wishlist",
     deployLink: "https://afternoon-ridge-53194.herokuapp.com/",
-    projectRole: "Design and FullStack Development",
+    projectRole: "Design and Deploy a FullStack Application",
     skills_id: ["HTML5", "CSS", "jQuery", "Sequelize ORM", "Handlebars"],
     appDesc: "JavaScript DOM site rendering utilizing MVC Handlebars and Sequelize ORM to track the state of each item.",
     projHighlights: "Clean, User friendly demonstration of Stateful development with Handlebars MVC and full JavaScript rendering.",
@@ -111,7 +111,11 @@ db.Projects.insert({
     repoLink: "https://github.com/chindowns/job-kit",
     deployLink: "https://jobkit.herokuapp.com",
     projectRole: "Database design and model creation with Sequelize, Authentication and Bug testing and troubhleshooting.",
-    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Sequelize ORM", "Handlebars", "UI Kit", "3rd Party APIs", "Server Side APIs", "OOP", "Node.js", "Rest API"]
+    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Sequelize ORM", "Handlebars", "UI Kit", "3rd Party APIs", "Server Side APIs", "OOP", "Node.js", "Rest API"],
+    appDesc: "JobKit organizes all of your job hunt information in one place.  Keep track of each application includng the resume used, whom you talked to about the application, notes from the discussion and where you are in the hiring process with each application.",
+    projHighlights: "Add and edit applications.  Add and edit details of the hiring process related to the application.",
+    projecResponsiblities: "Full Stack Developer working on the backend, authentication, frontend, testing and quality assurance.",
+    projLearnings: "Learned the benefit of an Agile development with an operating MVP developed in 2 days.  Managing state with UI Kit, Handelbars and Sequelize required some problem solving",
 });
 
 db.Project.insert({
@@ -119,35 +123,39 @@ db.Project.insert({
     imageLink: "yumyum.jpg",
     repoLink: "https://github.com/chindowns/Yum-Yum",
     deployLink: "https://yum-y-yum.herokuapp.com",
-    projectRole: "Database design, models, authentication, application setup, react recipe search, recipe favorites, troubhleshooting and testing",
-    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Node.js", "Sequelize ORM", "Bootstrap", "Firebase", "Rest API", "OOP", "Server Side APIs"]
+    projectRole: "Product Manager and Full Stack Developer",
+    skills_id: ["HTML5", "CSS", "jQuery", "JavaScript", "MySQL", "Node.js", "Sequelize ORM", "Bootstrap", "Firebase", "Rest API", "OOP", "Server Side APIs"],
+    appDesc: "is your favorite Recipe Manager. Create, Save, View, and Edit your recipes -- You can do it all.",
+    projHighlights: "Full MERN app using MySQL to support the 8 table, 7 joins database including 3 many-many relastionships. Utilizing Global State to track the User, User Favorites, and Current Recipe.  React application uses 8 pages with 7 components shared with multiple pages. We love this app and think you will too.",
+    projResponsibilities: "Database design, models, authentication, application setup, react recipe search, recipe favorites, troubhleshooting and testing",
+    projLearnings:"Complex database relationships require more complex programming logic to support CRUD.",
 })
 
 db.JobHistory.insert({
     company: "Self-Employeed",
-    jobTitle: "Realestate, Landlord, Handyman",
-    endDate: "2020-03-10",
-    startDate: "2016-04-01",
+    jobTitle: "Purchase & Renovate rental houses",
+    endDate: "current",
+    startDate: "Jun 2007",
     city:"Bentonville",
     state: "AR",
     accomplishments1: "Purchase & renovate rental houses required vision, development, contractor maangement and ability to identify obstacles, adjust plans and vision to meet goals and complete on schedule.",
 });
 
 db.JobHistory.insert({
-    company: "1Source LLC",
+    company: "Sefl-Employed",
     jobTitle: "Business Consultant",
-    endDate: "2016-04-01",
-    startDate: "2012-08-01",
+    endDate: "Aug 2013",
+    startDate: "Apr 2016",
     city: "Hong Kong",
     state: "Hong Kong",
     accomplishments1: "Worked with Executives and Business Owners analyze and lower telecom expenses."
 });
 
 db.JobHistory.insert({
-    company: "CD Business Solutions",
+    company: "Self-Employed",
     jobTitle: "Business Consultant",
-    endDate: "2012-08-01",
-    startDate: "2009-08-01",
+    endDate: "Aug 2012",
+    startDate: "Aug 2009",
     city: "Bentonville",
     state: "AR",
     accomplishments1: "Worked with businesses to help build web and marketing practice.",
@@ -157,9 +165,9 @@ db.JobHistory.insert({
 db.JobHistory.insert({
     company: "PRN",
     jobTitle: "Director Business Development",
-    endDate: "2009-06-01",
-    startDate: "1998-05-01",
+    endDate: "June 2009",
+    startDate: "May 1998",
     accomplishment1: "Developed and sold $3M annual advertising campaign incorporating 27 brands with Sam's Club",
     accomplishment2: "Developed and Lead the Technical Account Team to support Walmart In-Store Digital and HD advertising.",
-    accomplishment3: "As Product Manager, worked closely with Engineering and QA to develop a process that released updates every 6 weeks to 12,000 servers, nationwide and PR.  This process was very similar to Agile."
+    accomplishment3: "As Product Manager, developed a product cycle that released incremental updates to Walmart every 8 weeks with a major release every 3rd release.  The cycle was very similar to Agile."
 });

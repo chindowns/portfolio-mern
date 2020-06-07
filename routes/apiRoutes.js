@@ -3,27 +3,30 @@ const axios = require("axios");
 
 module.exports = function (app) {
 
+
+    let check = 0;
+
     app.get("/api/blogs", (req, res) => {
-    console.log("Getting Blogs");
 
-        axios.get(" https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@chindowns")
-        .then( medium => {
-            console.log(medium.data);
-            if (medium.data.status === 'ok') {
-                res.json(medium.data)
-            }
-        })
-        .catch(err => res.status(422).json(err));
+        console.log("Getting Blogs");
+        if (check < 2) {
+            check++;
+
+            axios.get(" https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@chindowns")
+                .then(medium => {
+                    console.log(medium.data);
+                    if (medium.data.status === 'ok') {
+                        res.json(medium.data)
+                    }
+                    // set timeout of 2 minute before making another request
+                    setTimeout(() => {
+                        check = 0;
+                    }, 120000)
+                })
+                .catch(err => res.status(422).json(err));
+        }
     });
 
-    app.get("/api/search/:search", function(req,res){
-        console.log(req.params.search)
-        axios.get("https://www.googleapis.com/books/v1/volumes?q=" + req.params.search)
-        .then(dbModel => {
-            console.log(dbModel.data)
-            res.json(dbModel.data)})
-        .catch(err => res.status(422).json(err));
-    });
 
 
     // app.get("/api/books", function(req,res){

@@ -1,23 +1,40 @@
 import React from "react";
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Modal from "../Modals/Modal"
+import useModel from "../Modals/useModal"
+
 import "./card.css";
-// import {Link} from "react-router-dom";
 
 const Item = (props) => {
 
+    const {isShowing, toggle} = useModel();
+
     let blog = props.blog;
-    let intro = blog.description.split(" ").splice(0, 24).join(" ");
+    let description = blog.description
+    let shortDesc = description.substring(description.indexOf("</figure><p>") + 12);
+    shortDesc.trim();
+    let intro = shortDesc.split(" ").splice(0, 24).join(" ");
+    console.log(blog);
+    console.log(intro);
 
     return (
-        <Card width="225px">
-            <Link to={"./blogModal"+ blog }>
-                <Card.Img variant="top" src="blog.thumbnail" width="200px" />
+        <>
+            <Card className="blog" style={{ width: "300px", margin: "15px" }}>
+                <Card.Img variant="top" src={blog.thumbnail} width="200px" />
                 <Card.Body className="card-body">
                     <Card.Title>{blog.title}</Card.Title>
                     <Card.Text>{intro}</Card.Text>
                 </Card.Body>
-            </Link>
-        </Card>
+                <button className="button-default" onClick={toggle}>Read More</button>
+            </Card>
+            <Modal
+                isShowing={isShowing}
+                hide={toggle}
+                blog={blog}
+            />
+        </>
+
     );
 
 }
