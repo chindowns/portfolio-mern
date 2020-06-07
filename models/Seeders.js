@@ -73,8 +73,8 @@ db.Projects.insert({
     deployLink: "https://github.com/chindowns/weather",
     projectRole: "Auther (Self Developed)",
     skills_id: ["Web APIs", "3rd Party APIs", "JavaScript", "CSS Frameworks"],
-    appDesc: "Easy and Quick Weather App utilizing weatherAPI for weather data",
-    projHighlights: "Weather App is clean, polished, responsive, friendly site where user can Click, Enter or Tab to engage a search. The site maintains the last 10 visited sites.",
+    appDesc: "<p>The Weather App is a weather dashboard with clean, polished, responsive, and pleasingly friendly weather dashboard that utilizes weatherapi.com as the 3rd party API providing access to all the cities around the world.</p><p> The site utilizes a search bar where the user can type in their city search and click on the search icon, hit enter or tab to pull the data for a city filtered in the United States.This app utilizes: HTML, CSS, jQuery, and JavaScript.</p>",
+    projHighlights: "Weather App is clean, polished, responsive, friendly site where user can Click, Enter or Tab to search. The site maintains the last 10 visited sites.",
     projResponsibilities: "Full Design, API selection, and Developemnt.",
     projLearnings: "Rendering a pleasant polished look using dynamic dates and icons in the forecast cards along with input validation."
 })

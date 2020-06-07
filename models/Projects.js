@@ -33,10 +33,7 @@ var ProjectsSchema = new Schema({
         required: true
     },
 
-    appDesc: {
-        type: String,
-        validate: [({length}) => length <= 72,"Description must be less than 72 characters"]
-    },
+    appDesc: String,
 
     projHighlights: String,
 

@@ -1,6 +1,7 @@
 //Header/index.js
 import React from 'react';
 import COL from 'react-bootstrap/Col';
+import './header.css'
 
 export default function Header() {
     return(

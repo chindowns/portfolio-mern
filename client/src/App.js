@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <CONTAINER>
-        <ROW>
+        <ROW style={{ borderBottom: "1px solid lightgrey", marginBottom: "10px" }}>
         <Header />
         <NavBar />
         </ROW>

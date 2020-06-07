@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-function Projects() {
+export default function Projects() {
+
+
+  useEffect(() => {
+    if (projects.length === 0) {
+      
+    }
+
+  },[])
+
+
 
 return (
     <section id="projects">
@@ -64,4 +74,4 @@ return (
 
 }
 
-export default Projects;
+
