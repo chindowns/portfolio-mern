@@ -10,17 +10,15 @@ export default function Blogs() {
     const [check, setCheck] = useState(0);
     
     useEffect(() => {
-        if (blogs.length === 0 && check < 3) {
-            setCheck(check + 1);
+        if (blogs.length === 0) {
             axios.get('/api/blogs')
             .then(res => { 
                 setTitle(res.data.feed.title);
                 setBlogs(res.data.items);
             });
-            if (blogs.length > 0) {setCheck(0)}
         }
     
-    })
+    },[blogs.length]);
 
     console.log(title);
     console.log(blogs);

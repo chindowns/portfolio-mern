@@ -1,7 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Modal from "../Modals/Modal"
+import Modal from "../Modals/modal"
 import useModel from "../Modals/useModal"
 
 import "./card.css";
@@ -18,9 +18,10 @@ const Item = (props) => {
     console.log(blog);
     console.log(intro);
 
+
     return (
         <>
-            <Card className="blog" style={{ width: "300px", margin: "15px" }}>
+            <Card style={{ width: "300px", margin: "15px" }}>
                 <Card.Img variant="top" src={blog.thumbnail} width="200px" />
                 <Card.Body className="card-body">
                     <Card.Title>{blog.title}</Card.Title>
@@ -28,11 +29,14 @@ const Item = (props) => {
                 </Card.Body>
                 <button className="button-default" onClick={toggle}>Read More</button>
             </Card>
+            <div className="blog">
             <Modal
                 isShowing={isShowing}
                 hide={toggle}
-                blog={blog}
+                modalTitle={blog.title}
+                modalContent={blog.content}
             />
+            </div>
         </>
 
     );
