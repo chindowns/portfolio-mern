@@ -18,6 +18,7 @@ const ResumeSchema = new Schema({
     state: String,
     linkedinResume: String,
     githubResume: String,
+    brandStatement: String,
 });
 
 const Resume = mongoose.model("Resume", ResumeSchema);

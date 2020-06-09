@@ -3,11 +3,8 @@
 import React from "react";
 import "./navbar.css"
 import { Nav} from 'react-bootstrap';
-import {Link, useLocation} from "react-router-dom";
 
-function NavBar() {
-
-    const location = useLocation();
+export default function NavBar() {
 
     return (
         <Nav id="nav" variant="tabs">
@@ -24,4 +21,3 @@ function NavBar() {
 
     )
 }
-    export default NavBar;

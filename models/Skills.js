@@ -2,17 +2,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var SkillsSchema = new Schema({
-    skill: {
+    name: {
         type: String,
         required: true
-    },
-
-    type: {
-        type: String,
-        required: true,
-        enum: ["frontend", "backend"]
-    },
-
+    }
 });
 
 const Skills = mongoose.model("Skills", SkillsSchema);

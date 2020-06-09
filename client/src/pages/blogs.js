@@ -34,4 +34,5 @@ export default function Blogs() {
             </Container>
         </div>
     )
+
 }

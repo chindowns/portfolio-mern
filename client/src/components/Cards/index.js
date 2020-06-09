@@ -10,7 +10,6 @@ const Item = (props) => {
     const { isShowing, toggle } = useModel();
 
     let blog = props.blog;
-    let blogLink = blog.guid
 
     let description = blog.description
     let intro = description.substring(description.indexOf("</figure><p>") + 12).split(" ").splice(0, 24).join(" ").trim();
