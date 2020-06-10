@@ -1,6 +1,17 @@
 html body {
   margin: 0 25px;
 }
+
+/* Animated Switch */
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+}
+/* Animated Switch */
+
 /*  REACT TRANSITIONS */
 .fade-appear {
   opacity: 0;
