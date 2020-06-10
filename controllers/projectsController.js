@@ -49,7 +49,7 @@ const seedDB = [
         deploy: "https://github.com/chindowns/weather",
         devRole: "Auther (Self Developed)",
         skills: ["Web APIs", "3rd Party APIs", "JavaScript", "AJAX", "CSS Frameworks"],
-        description: "<p>The Weather App is a weather dashboard with clean, polished, responsive, and pleasingly friendly weather dashboard that utilizes weatherapi.com as the 3rd party API providing access to all the cities around the world.</p><p> The site utilizes a search bar where the user can type in their city search and click on the search icon, hit enter or tab to pull the data for a city filtered in the United States.This app utilizes: HTML, CSS, jQuery, and JavaScript.</p>",
+        description: "The Weather App is a weather dashboard with clean, polished, responsive, and pleasingly friendly weather dashboard that utilizes weatherapi.com as the 3rd party API providing access to all the cities around the world.\n\nThe site utilizes a search bar where the user can type in their city search and click on the search icon, hit enter or tab to pull the data for a city filtered in the United States.This app utilizes: HTML, CSS, jQuery, and JavaScript.",
         highlights: "Weather App is clean, polished, responsive, friendly site where user can Click, Enter or Tab to search. The site maintains the last 10 visited sites.",
         responsibilities: "Full Design, API selection, and Developemnt.",
         learnings: "Rendering a pleasant polished look using dynamic dates and icons in the forecast cards along with input validation."
@@ -75,7 +75,7 @@ const seedDB = [
         deploy: "https://chindowns.github.io/covid19-tracker/",
         devRole: "Covid API, Chartjs, and Refactoring",
         skills: ["JavaScript", "jQuery", "Web APIs", "3rd Party APIs", "AJAX", "HTML5", "CSS", "CSS Frameworks", "Mapbox", "Leafletjs", "Big Data", "Big Data Parsing", "Full Stack"],
-        description: "<p>Web App developed in the early stages to track new cases by State per Day.</p><p>In January 2020, the World Health Organizatin declared the Covid-19 Virus (aka Coronavirus) represents a public health emergency of international concern. On January 31, the U.S. Department of Health and Human Services declared the virus to be a health emergency for the United States. The first recorded case in the United States was on January 22, 2020.</p><p>This application, Covid- 19 Tracker is a web application that enables the user to see what is happening around the world regarding the Covid - 19 Pandemic on one screen.The application enables the user to select one of the top 10 hotspots around the World and see live updates of how many cases have been Confirmed, Recovered, and Deaths associated to Covid - 19 in that country.Along side the map, the news will display the latest headline news regarding health news in that country.</p><p>In the United States, the user has the ability to zoom into the US, select the marker in the state and see a chart that plots confirmed cases by day for that state.</p>",
+        description: "Web App developed in the early stages to track new cases by State per Day.</p><p>In January 2020, the World Health Organizatin declared the Covid-19 Virus (aka Coronavirus) represents a public health emergency of international concern. On January 31, the U.S. Department of Health and Human Services declared the virus to be a health emergency for the United States. The first recorded case in the United States was on January 22, 2020.\n\n This application, Covid- 19 Tracker is a web application that enables the user to see what is happening around the world regarding the Covid - 19 Pandemic on one screen.The application enables the user to select one of the top 10 hotspots around the World and see live updates of how many cases have been Confirmed, Recovered, and Deaths associated to Covid - 19 in that country. Along side the map, the news will display the latest headline news regarding health news in that country.\n\nIn the United States, the user has the ability to zoom into the US, select the marker in the state and see a chart that plots confirmed cases by day for that state.",
         highlights: "Clean, User friendly site to pull the latest available data regarding the Pandemic in one place.  The News pulls Health Information by country which was COVID related during the Pandemic.",
         responsibilities: "Identify, Design, Develop, and Deploy in 7 days. Direct responsibility for COVID API Data Aggregation, Formatting and  Chart Rendering",
         learnings: "Managing and Parsing Big Data for Website rendering.  Maintaining 3rd Party APIs to ensure the site functions optimally. Scrubbing, Parsing, Concatenating data hundred thousand objects to display visually."
@@ -96,7 +96,7 @@ const seedDB = [
     {
         order: 9,
         name: "JobKit",
-        image: "applications-tracked.jpg",
+        image: "jobkit.gif",
         repo: "https://github.com/chindowns/job-kit",
         deploy: "https://jobkit.herokuapp.com",
         devRole: "Database design and model creation with Sequelize, Authentication and Bug testing and troubhleshooting.",
@@ -110,7 +110,7 @@ const seedDB = [
     {
         order: 10,
         name: "Yum&Yum",
-        image: "yumyum.jpg",
+        image: "YumYum-demo.gif",
         repo: "https://github.com/chindowns/Yum-Yum",
         deploy: "https://yum-y-yum.herokuapp.com",
         devRole: "Product Manager and Full Stack Developer",
