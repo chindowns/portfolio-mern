@@ -70,7 +70,7 @@ function App() {
             <Route path="/blogs" component={Blogs} />
             <Route path="/projects" component={Projects} />  
           </AnimatedSwitch>
-        <Footer />
+          <Row><Footer /></Row>
       </Container>
     </Router>
   );

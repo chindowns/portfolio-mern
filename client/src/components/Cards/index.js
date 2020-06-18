@@ -18,7 +18,7 @@ const Item = (props) => {
 
 
     return (
-            <Card style={{ width: "300px", margin: "15px" }}>
+            <Card style={{ margin: "15px" }}>
                 <Card.Img variant="top" src={blog.thumbnail} width="200px" />
                 <Card.Body className="card-body">
                     <Card.Title>{blog.title}</Card.Title>

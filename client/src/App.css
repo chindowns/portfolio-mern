@@ -1,5 +1,7 @@
-html body {
-  margin: 0 25px;
+body {
+  margin: 0px 0px 80px;
+  min-height: 800px;
+  clear: both;
 }
 
 /* Animated Switch */
@@ -44,7 +46,13 @@ html body {
   transition: opacity 300ms linear;
 }
 
-
+.about-icons {
+  display: inline-flex;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50px;
+  margin-left: 25px;
+}
 /*  REACT TRANSITIONS */
 
 
@@ -89,10 +97,11 @@ html body {
 
 #footer {
   position: fixed;
+  display: block;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 5px 25px;
+  padding: 15px 25px 0px;
   background: snow;
 }
 
@@ -104,7 +113,7 @@ html body {
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   to {
     transform: rotate(360deg);
