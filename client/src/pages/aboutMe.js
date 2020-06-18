@@ -2,14 +2,10 @@ import React from "react";
 import {Row, Col, Card} from "react-bootstrap";
 
 export default function AboutMe() {
-  let skills = [
-    "Mongoose ODM", "HTML5", "CSS", "jQuery", "JavaScript", "ES6", "Bootstrap", "AJAX", "SASS", "Perl", "Python", "Linux", "JSON", "AJAX", "Bootstrap", "Index DB", "React", "JSX", "Context API", "Passport", "Declarative Programming", "Ruby", "Sinatra", "Flask", "Django", "Rails" , "Mongo DB", "Express", "ReactJS", "NodeJS", "Handlebars", "Firebase", "AWS", "Webpack", "Gulp", "REST API", "Git"
-  ]
-
-  return(
+    return(
     <Row id="about">
       <Col>
-          <img id="profile-img" src="Portfolio-HeadShot-3.jpg" className="rounded-circle" alt="Michael Downs" width="300px" />
+          <img id="profile-img" src="portrait-500.jpg" className="rounded-circle" alt="Michael Downs" width="300px" />
 
       <p>
       Michael completed UC Berkeley's Full Stack Development program. Michael delivers clean and polished applications in a collaborative environment. He is an effective communicator with an ability to translate technology into everyday language for clients and users.
