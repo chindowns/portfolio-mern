@@ -17,6 +17,9 @@ export default function AboutMe() {
         Michael's curiosity drives his continuing learning and strives to implement best practices with both object-oriented and declarative programming languages and concepts.
         </p>
         </Col>
+        <Col>
+        <img src=
+        </Col>
         
       </div>
     )
