@@ -21,7 +21,6 @@ function mapStyles(styles) {
   };
 }
 
-
 // wrap the `spring` helper to use a bouncy config
 function bounce(val) {
   return spring(val, {

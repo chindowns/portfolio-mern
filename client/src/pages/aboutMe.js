@@ -9,25 +9,23 @@ export default function AboutMe() {
 
       <p>
       Michael completed UC Berkeley's Full Stack Development program. Michael delivers clean and polished applications in a collaborative environment. He is an effective communicator with an ability to translate technology into everyday language for clients and users.
-
       <br /><br />
       Michael is a Collaborative teammate who will also manage individual tasks in order to get projects completed. Through his clear communication and leadership skills, he delivered successful projects that involved pair programming, virtual teams, and quick and effective troubleshooting quickly.
       <br /><br />
-
       Michael's curiosity drives his continuing learning and strives to implement best practices with both object-oriented and declarative programming languages and concepts.
       </p>
       <Card>
         <Card.Body>
           <Card.Title>Technical Skills</Card.Title>
           <Card.Text>
-            <p>
+            <p class="skills">
             JavaScript &bull; ES6 &bull; jQuery &bull; NodeJS &bull; Express &bull; REST API &bull; SASS &bull; HTML5 &bull; CSS &bull; Bootstrap &bull; React &bull; JSX &bull; Context API &bull; MongoDB &bull; MySQL &bull; Postgres &bull; Mongoose ODM &bull; Sequelize ORM &bull; Ruby &bull; Rails &bull; Python &bull; Linux &bull; Pearl &bull; Sinatra &bull; Flask &bull; Django &bull; Declarative Programming &bull; Firebase &bull; AWS &bull; Webpack &bull; Git &bull; Gulp &bull; Handlebars 
             </p>
           </Card.Text>
           <hr />
           <Card.Title>Soft Skills</Card.Title>
           <Card.Text>
-            <p>
+            <p class="skills">
             Cross-functional teams &bull; Effective Communicator &bull; Presentation to Executive, Management, Clients &bull; Sales & Marketing &bull; Business Development &bull; Product Management &bull; Project Management &bull; Startups &bull; Highly Motivated &bull; Self Initiative &bull; Detail Oriented &bull; Team Collaboration &bull; Self Contributor
             </p>
           </Card.Text>
